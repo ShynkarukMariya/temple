@@ -1,0 +1,22 @@
+.view {
+    background: url("https://scontent.fdnk1-2.fna.fbcdn.net/v/t1.0-9/50119410_327331354548818_1161051040179552256_n.jpg?_nc_cat=107&_nc_ht=scontent.fdnk1-2.fna&oh=85c774cc882ff803f93108c102bee9ae&oe=5CBE015A")no-repeat center center;
+    background-size: cover;
+
+}
+
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
