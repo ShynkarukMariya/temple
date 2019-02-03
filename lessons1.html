@@ -13,6 +13,7 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/text.css" rel="stylesheet">
+    <script src="js/script.js"></script>
 </head>
 <body>
 <header>
@@ -25,11 +26,20 @@
     <div class="header-center">
         <ul>
             <li><a href="#">На головну</a></li>
-            <li><a href="#">Про церкву</a></li>
-            <li><a href="#">Контакти</a></li>
-            <li><a href="#">Церковний календар</a></li>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Про церкву</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="http://localhost:63342/temple/about_church.html?_ijt=3omj5ljggo7q35v50lht6lb0c4">Про церкву</a>
+                    <a href="#">Священник</a>
+                    <a href="#">Парафіяни</a>
+                    <a href="#">Церковний хор</a>
+                </div>
+                <li><a href="http://localhost:63342/temple/contact.html?_ijt=haoilbds36ga8u463rmgs2lb3j">Контакти</a></li>
+                <li><a href="#">Церковний календар</a></li>
+            </div>
         </ul>
     </div>
+
 
     <form class="form-inline mr-auto">
         <input class="form-control mr-sm-2" type="text" placeholder="Пошук" aria-label="Пошук">
@@ -56,14 +66,17 @@
     <aside>
         <nav>
             <ul class="aside-menu">
-                <li class="saens"><a href="#"><strong>Новини</strong></a></li>
-                <li class="saens"><a href="#"><strong>Громада</strong></a></li>
+                <li class="saens"><a
+                        href="http://localhost:63342/temple/saens.html?_ijt=pn6q5oh1bmc4u3hs7b1nns6dt9"><strong>Новини</strong></a>
+                </li>
+                <li class="saens"><a href="#"><strong>Блоги</strong></a></li>
                 <li class="saens"><a href="#"><strong>Відео</strong></a></li>
-                <li class="saens"><a href="#"><strong>Карта</strong></a></li>
+                <li class="saens"><a href="#"><strong>Бібліотека</strong></a></li>
 
             </ul>
 
         </nav>
+
     </aside>
     <div class="cozuno">
         <img src="http://decerkva.org.ua/fra/images/kozyna_tysmenytskiy_A.Senko_f30-09-2017.JPG">

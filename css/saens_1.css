@@ -1,0 +1,210 @@
+@media (max-width: 1000px) {
+    header {
+        /* Меняем оси шапки, делая её вертикальной. */
+        flex-direction: column;
+
+        /* Выравнивание элементов шапки с начала (по левому краю). */
+        align-items: flex-start;
+    }
+}
+
+body  {
+    background-color:#dfeefd;
+}
+
+header {
+    /* Включаем режим Flexbox. */
+    display: flex;
+    border: 1px solid black;
+    background: #2979ff;
+    /* Выравниваем элементы вертикально по центру. */
+    align-items: center;
+}
+
+.img-logo {
+    position: relative;
+    margin: 10px;
+    width: 75px;
+    height: 75px;
+    border-bottom-left-radius: 23px;
+
+    border-top-right-radius: 23px;
+}
+.href  {
+    background: linear-gradient(-45deg, #FEE864, #F5965E);
+    color: darkblue;
+    text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
+    font-family: Arial;
+}
+
+.header-center li {
+
+    display: inline-block;
+
+}
+.header-center a {
+    color: white;
+    text-decoration: none;
+    text-shadow: none;
+    background: none;
+    margin: 38px;
+    font-family:SansSerif ;
+    font-size: 18px;
+}
+.form-control mr-sm-2 {
+    position: relative
+}
+
+
+
+
+
+.post-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.post-item {
+    padding: 10px;
+}
+.post-item-wrap {
+    background: #F7F7F2;
+    position: relative;
+}
+.post-item-wrap:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: green;
+    transform: rotate(1deg);
+    transform-origin: left bottom;
+    transition: .3s ease-in-out;
+}
+.post-item-wrap:hover:after {
+    top: 5px;
+    left: 5px;
+    transform: rotate(2deg);
+}
+.post-link {
+    text-decoration: none;
+    display: block;
+    padding: 30px;
+}
+.post-title {
+    color: #33261D;
+    margin-bottom: 15px;
+    transition: .3s ease-in-out;
+}
+.post-item-wrap:hover .post-title {
+    color: #ffc400;
+}
+.post-content {
+    color: #f4511e;
+    font-size: 14px;
+}
+@media (min-width: 768px) {
+    .post-item {
+        flex-basis: 50%;
+        flex-shrink: 0;
+    }
+}
+@media (min-width: 960px) {
+    .post-item {
+        flex-basis: 33.333333333%;
+    }
+}
+footer{
+    height: 100%;
+    bottom: auto;
+}
+
+
+
+
+.post-wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.post-item {
+    padding: 10px;
+}
+.post-link {
+    text-decoration: none;
+    display: block;
+}
+.post-item-wrap {
+    overflow: hidden;
+    position: relative;
+}
+.post-item img {
+    display: block;
+    width: 100%;
+}
+.text-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 86%;
+    padding: 20px;
+    background: #C4962A;
+    background-image: url(https://galinfo.com.ua/media/gallery/full/8/8/888888888888_2016.jpg);
+    transform: translate3d(-100%,0,0);
+    transition: transform .5s cubic-bezier(.33,.02,0,.93);
+}
+.post-item:hover .text-wrapper {
+    transform: translate3d(0,0,0);
+    transition: transform .5s cubic-bezier(.33,.02,0,.93) .3s;
+}
+/*.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: linear-gradient(to top, #FFB923, #4BC413 50%, #345BC4 80%);
+
+    transform: translate3d(-100%,0,0);
+    transition: transform .4s cubic-bezier(.33,.02,0,.93) .2s;
+}*/
+.post-item:hover .overlay {
+    transform: translate3d(0,0,0);
+    transition: transform .5s cubic-bezier(.33,.02,0,.93);
+}
+.post-cat {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #000200;
+    font-weight: 500;
+}
+.post-title {
+    font-size: 12px;
+    font-weight: 400;
+    color: #4A4A40;
+    font-style: italic;
+}
+@media (min-width: 768px) {
+    .post-item {
+        flex-basis: 50%;
+        flex-shrink: 0;
+    }
+}
+@media (min-width: 960px) {
+    .post-item {
+        flex-basis: 33.333333333%;
+    }
+}

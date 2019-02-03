@@ -1,0 +1,57 @@
+@media (max-width: 1000px) {
+    header {
+        /* Меняем оси шапки, делая её вертикальной. */
+        flex-direction: column;
+
+        /* Выравнивание элементов шапки с начала (по левому краю). */
+        align-items: flex-start;
+    }
+}
+
+body  {
+    background-color:white;
+}
+
+header {
+    /* Включаем режим Flexbox. */
+    display: flex;
+    border: 1px solid black;
+    background: #2979ff;
+    /* Выравниваем элементы вертикально по центру. */
+    align-items: center;
+}
+
+.img-logo {
+    position: relative;
+    margin: 10px;
+    width: 75px;
+    height: 75px;
+    border-bottom-left-radius: 23px;
+
+    border-top-right-radius: 23px;
+}
+
+.href  {
+    background: linear-gradient(-45deg, #FEE864, #F5965E);
+    color: darkblue;
+    text-shadow: -1px -1px white, 1px 1px gray, 2px 2px #7a7a7a, 3px 3px #757575, 4px 4px #707070, 5px 5px #6b6b6b, 6px 6px #666666, 7px 7px #616161, 8px 8px #5c5c5c, 9px 9px #575757, 10px 10px #525252, 11px 11px #4d4d4d, 18px 18px 30px rgba(0, 0, 0, .4), 18px 18px 10px rgba(0, 0, 0, .4);
+    font-family: Arial;
+}
+
+.header-center li {
+
+    display: inline-block;
+
+}
+.header-center a {
+    color: white;
+    text-decoration: none;
+    text-shadow: none;
+    background: none;
+    margin: 38px;
+    font-family:SansSerif ;
+    font-size: 18px;
+}
+.form-control mr-sm-2 {
+    position: relative
+}
