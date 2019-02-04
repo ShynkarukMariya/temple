@@ -9,7 +9,8 @@
 }
 
 body  {
-    background-color:white;
+    background: url("https://scontent.fdnk1-2.fna.fbcdn.net/v/t1.0-9/44315812_291164601498827_7678737458879528960_n.jpg?_nc_cat=106&_nc_ht=scontent.fdnk1-2.fna&oh=3be204a2169a8a0152678ad321a4484c&oe=5CED1738");
+margin: 30px;
 }
 
 header {
@@ -54,4 +55,30 @@ header {
 }
 .form-control mr-sm-2 {
     position: relative
+}
+/*contact*/
+
+.map-container-section {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-container-section iframe {
+    left:0;
+    top:0;
+    height:66%;
+    width:100%;
+    position:absolute;
+}
+h5 {
+    text-align: center;
+
+}
+.card {
+    background-color: #b3d7ff;
+
+}
+.strong {
+    color: white;
 }

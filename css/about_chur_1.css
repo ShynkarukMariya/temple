@@ -19,6 +19,7 @@ header {
     background: #2979ff;
     /* Выравниваем элементы вертикально по центру. */
     align-items: center;
+
 }
 
 .img-logo {
@@ -54,4 +55,9 @@ header {
 }
 .form-control mr-sm-2 {
     position: relative
+}
+/*.content1 img {
+    width: 300px;
+    height:350px;
+
 }

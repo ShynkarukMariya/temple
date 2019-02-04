@@ -8,8 +8,10 @@
     }
 }
 
+
 body  {
-   background-color:#FFE7AF;
+   background-color:#FFDA8B;
+
 }
 
 header {
@@ -71,7 +73,12 @@ p {
 
     margin: 45px;
     display: inline-block;
+}
 
+.cozuno1 {
+    display: inline-block;
+    width: 450px;
+    height: 370px;
 }
 aside {
     float: left;
