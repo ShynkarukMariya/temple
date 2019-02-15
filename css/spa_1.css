@@ -1,0 +1,9 @@
+.comments p:nth-child(even) {
+    background: lavender;
+}
+.comments p:nth-child(odd) {
+    background: gainsboro;
+}
+h1 {
+    border-bottom: 1px solid black;
+}
